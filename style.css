@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background: linear-gradient(150deg, #252525 , #000000) no-repeat center center fixed;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.header h1 {
+    font-size: 12vw;
+    background: linear-gradient(150deg, #999898 , #9a9696);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.header p {
+    font-size: 8vw;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,55,0,1) 50%, rgba(255,145,0,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.content {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.fig {
+    margin: 52px auto;
+    width: 70%;
+    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.1);
+    perspective: 1500px;
+    transform: rotateX(8deg) rotateY(-8deg) rotateZ(3deg);
+    transition: .3s;
+}
+
+.fig:hover {
+    transform: rotate(0) translateY(-6px);
+}
+
+.fig img {
+    width: 100%;
+}
